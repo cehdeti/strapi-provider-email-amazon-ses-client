@@ -1,0 +1,49 @@
+{
+  "name": "strapi-provider-email-amazon-ses-client",
+  "version": "1.0.0",
+  "description": "Strapi email provider for using Amazon SES (aws-sdk integration).",
+  "keywords": [
+    "email",
+    "strapi",
+    "provider",
+    "amazon",
+    "ses"
+  ],
+  "strapi": {
+    "isProvider": true,
+    "name": "strapi-provider-email-amazon-ses-client",
+    "description": "Strapi email provider for using Amazon SES (aws-sdk integration).",
+    "kind": "plugin",
+    "displayName": "Amazon SES (using aws-sdk)"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^5.x.x"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "./dist/index.js",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.879.0",
+    "@strapi/utils": "5.10.4"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "@stylistic/eslint-plugin": "^5.2.3",
+    "eslint": "^9.34.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.41.0"
+  }
+}
